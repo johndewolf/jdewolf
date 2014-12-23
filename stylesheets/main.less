@@ -120,16 +120,16 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-color: brown;
   color: @base-dark;
 
   .about-me-text {
   	background: rgba(255,255,255,0.6);
+  	padding: 2em;
   }
   @media (min-width: 767px) {
   	.about-me-text {
   		margin: 1em -1em;
-  		padding: 0 1em;
+  		padding: 2em 1em;
   	}
   }
 }
@@ -141,6 +141,8 @@ header {
 #resume .container {
 	border: 1px solid #d3d3d3;
 	padding: 0.75em 1em;
+	margin-top: 2em;
+	margin-bottom: 3em;
 }
 
 
@@ -199,4 +201,47 @@ header {
 	100% {
 		-webkit-transform: translateX(0%);
 	}
+}
+
+.pulse {
+	animation-name: pulse;
+	top: 4em;
+	position: relative;
+	-webkit-animation-name: pulse;	
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.9);
+		opacity: 0.7;		
+	}
+	50% {
+		transform: scale(1);
+		opacity: 1;	
+	}	
+	100% {
+		transform: scale(0.9);
+		opacity: 0.7;	
+	}			
+}
+
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-transform: scale(0.95);
+		opacity: 0.7;		
+	}
+	50% {
+		-webkit-transform: scale(1);
+		opacity: 1;	
+	}	
+	100% {
+		-webkit-transform: scale(0.95);
+		opacity: 0.7;	
+	}			
 }
