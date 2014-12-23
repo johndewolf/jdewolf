@@ -1,0 +1,247 @@
+@base-margin: 25px;
+@base-dark: #070A2C;
+
+
+html {
+	font-size: 16px;
+}
+
+body {
+	color: @base-dark;
+	font-size: 1em;
+	font-family: 'Josefin Sans', 'Raleway', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #5C3B30;
+}
+
+h1 {
+	font-size: 1.75em;
+	margin-bottom: 0.5em;
+}
+
+h2 {
+	font-size: 1.65em;
+	margin-bottom: 0.5em;
+}
+
+h3 {
+	font-size: 1.5em;
+	margin-bottom: 0.5em;
+}
+
+h4 {
+	font-size: 1.25em;
+	margin-bottom: 0.5em;
+}
+
+p {
+	margin-bottom: 0.5em;
+}
+
+li {
+	margin-bottom: 0.25em;
+}
+
+.top-nav {
+	margin-top: 1em;
+
+	li {
+		display: inline;
+		padding: 0 1em 0 0;
+	}
+
+	a {
+		color: #F2E6B6;
+	}
+}
+
+.unstyled-list {
+	text-align: center;
+
+	li {
+		display: inline;
+	}
+
+	li:not(:last-child) {
+		padding-right: 10%;
+	}
+
+	a {
+		text-decoration: none;
+	}
+}
+
+header {
+	background-color: #8F9E8B;
+}
+
+#welcome {
+	background: url(../img/mountaintop.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	padding: 3em 0 1em 0;
+	text-align: center;
+	min-height: 25em;
+	position: relative;
+
+	@media (min-width: 767px) {
+		.row {
+			position: relative;
+  		top: 50%;
+  		transform: translateY(75%);
+		}
+	}
+
+	a {
+		color: #1EAEDB;
+	}
+}
+
+.layer {
+    background-color: rgba(91, 120, 118, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.text-center {
+	text-align: center;
+}
+
+#about-me {
+  background: url(../img/selfie2.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: @base-dark;
+
+  .about-me-text {
+  	background: rgba(255,255,255,0.6);
+  	padding: 2em;
+  }
+  @media (min-width: 767px) {
+  	.about-me-text {
+  		margin: 1em -1em;
+  		padding: 2em 1em;
+  	}
+  }
+}
+
+.resume-section-header {
+	border-bottom: 1px solid #d3d3d3;
+}
+
+#resume .container {
+	border: 1px solid #d3d3d3;
+	padding: 0.75em 1em;
+	margin-top: 2em;
+	margin-bottom: 3em;
+}
+
+
+
+//Using this from http://www.justinaguilar.com/animations/css/animations.css, very handy!
+.slideRight{
+	animation-name: slideRight;
+	-webkit-animation-name: slideRight;	
+
+	animation-duration: 1s;	
+	-webkit-animation-duration: 1s;
+
+	animation-timing-function: ease-in-out;	
+	-webkit-animation-timing-function: ease-in-out;		
+
+	visibility: visible !important;	
+}
+
+@keyframes slideRight {
+	0% {
+		transform: translateX(-150%);
+	}
+	50%{
+		transform: translateX(8%);
+	}
+	65%{
+		transform: translateX(-4%);
+	}
+	80%{
+		transform: translateX(4%);
+	}
+	95%{
+		transform: translateX(-2%);
+	}			
+	100% {
+		transform: translateX(0%);
+	}	
+}
+
+@-webkit-keyframes slideRight {
+	0% {
+		-webkit-transform: translateX(-150%);
+	}
+	50%{
+		-webkit-transform: translateX(8%);
+	}
+	65%{
+		-webkit-transform: translateX(-4%);
+	}
+	80%{
+		-webkit-transform: translateX(4%);
+	}
+	95%{
+		-webkit-transform: translateX(-2%);
+	}			
+	100% {
+		-webkit-transform: translateX(0%);
+	}
+}
+
+.pulse {
+	animation-name: pulse;
+	top: 4em;
+	position: relative;
+	-webkit-animation-name: pulse;	
+
+	animation-duration: 1.5s;	
+	-webkit-animation-duration: 1.5s;
+
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.9);
+		opacity: 0.7;		
+	}
+	50% {
+		transform: scale(1);
+		opacity: 1;	
+	}	
+	100% {
+		transform: scale(0.9);
+		opacity: 0.7;	
+	}			
+}
+
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-transform: scale(0.95);
+		opacity: 0.7;		
+	}
+	50% {
+		-webkit-transform: scale(1);
+		opacity: 1;	
+	}	
+	100% {
+		-webkit-transform: scale(0.95);
+		opacity: 0.7;	
+	}			
+}
