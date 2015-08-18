@@ -17,6 +17,10 @@ a {
 	color: #5C3B30;
 }
 
+b {
+	font-weight: 700;
+}
+
 h1 {
 	font-size: 1.75em;
 	margin-bottom: 0.5em;
@@ -119,7 +123,7 @@ header {
 }
 
 #about-me {
-  background: url(../img/selfie2.jpg) no-repeat center center fixed; 
+  background: url(../img/selfie2.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -154,15 +158,15 @@ header {
 //Using this from http://www.justinaguilar.com/animations/css/animations.css, very handy!
 .slideRight{
 	animation-name: slideRight;
-	-webkit-animation-name: slideRight;	
+	-webkit-animation-name: slideRight;
 
-	animation-duration: 1s;	
+	animation-duration: 1s;
 	-webkit-animation-duration: 1s;
 
-	animation-timing-function: ease-in-out;	
-	-webkit-animation-timing-function: ease-in-out;		
+	animation-timing-function: ease-in-out;
+	-webkit-animation-timing-function: ease-in-out;
 
-	visibility: visible !important;	
+	visibility: visible !important;
 }
 
 @keyframes slideRight {
@@ -180,10 +184,10 @@ header {
 	}
 	95%{
 		transform: translateX(-2%);
-	}			
+	}
 	100% {
 		transform: translateX(0%);
-	}	
+	}
 }
 
 @-webkit-keyframes slideRight {
@@ -201,7 +205,7 @@ header {
 	}
 	95%{
 		-webkit-transform: translateX(-2%);
-	}			
+	}
 	100% {
 		-webkit-transform: translateX(0%);
 	}
@@ -211,9 +215,9 @@ header {
 	animation-name: pulse;
 	top: 1em;
 	position: relative;
-	-webkit-animation-name: pulse;	
+	-webkit-animation-name: pulse;
 
-	animation-duration: 1.5s;	
+	animation-duration: 1.5s;
 	-webkit-animation-duration: 1.5s;
 
 	animation-iteration-count: infinite;
@@ -227,35 +231,43 @@ header {
 	}
 	50% {
 		transform: scale(1);
-		opacity: 1;	
-	}	
+		opacity: 1;
+	}
 	100% {
 		transform: scale(0.9);
-		opacity: 0.7;	
-	}			
+		opacity: 0.7;
+	}
 }
 
 @-webkit-keyframes pulse {
 	0% {
 		-webkit-transform: scale(0.95);
-		opacity: 0.7;		
+		opacity: 0.7;
 	}
 	50% {
 		-webkit-transform: scale(1);
-		opacity: 1;	
-	}	
+		opacity: 1;
+	}
 	100% {
 		-webkit-transform: scale(0.95);
-		opacity: 0.7;	
-	}			
+		opacity: 0.7;
+	}
 }
 
 .resume-title {
-	border-bottom: 3px solid black;
+	border-bottom: 2px solid black;
 	border-radius: 2px;
 }
 
 #resume-page ul {
 	margin-bottom: 1em;
+	padding-left: 2em;
+	li {
+		color: rgb(34,34,34);
+	}
+}
 
+
+span.date {
+	float: right;
 }

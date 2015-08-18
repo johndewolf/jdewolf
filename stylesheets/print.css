@@ -1,0 +1,13 @@
+#resume .container, #resume-page .container {
+  border: none;
+  padding: 0;
+}
+
+li {
+  line-height: 1.25;
+  margin-bottom: 0;
+}
+
+body {
+  font-size: 10pt;
+}
